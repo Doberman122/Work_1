@@ -1,0 +1,57 @@
+// Вид 1 
+Первый вид методов ничего не возвращают и ничего не принимают.
+void Method1()
+{
+    Console.WriteLine("Автор");
+}
+Method1(); // Вызов метода.
+
+
+// Вид 2 
+Второй вид методов  ничего не возвращают но могут принимать какие-то аргументы.
+void Method2(string msg) // string Аргумент.
+{
+  Console.WriteLine(msg);
+}
+Method2("Текст Сообщение"); // Вызов Метода - вывод Сообщение.
+
+void Method2(string, count)
+{
+    i = 0
+    while (i < count) {
+        Console.WriteLine("Сообщение");
+        i++;
+    }
+}
+Method2("Текст", 4)
+
+// Вид 3 
+
+Третий вид методов что-то возвращают но ничего не принимают. 
+
+int Method3()
+{
+    return DataTime.Now.Year;
+}
+int year = Method3();
+Console.WriteLine(year);
+
+
+// Вид 4 
+Четвертый вид методов что-то принимают и что-то возвращают.
+
+string Method4(int count, string c)
+{
+int i = 0;
+string result = String.Empty;
+while (i < count)
+{
+result = result + c
+i++;
+}
+return result;
+
+}
+
+string res = Method4(10, "asdf");
+Console.WriteLine(res);
